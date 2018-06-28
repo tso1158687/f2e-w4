@@ -1,1 +1,532 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+$colorGreen: #50E3C2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-family: Roboto-Black;
+  font-size: 72px;
+  color: #000000;
+  /* text-align: center; */
+}
+
+.title {
+  width: 131px;
+  height: 27px;
+  font-family: Roboto-Black;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.container {
+  position: relative;
+  display: block; // border:4px solid #cf0;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  height: 500px;
+  margin-top: 34px;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+// div{
+//   display:block;
+// }
+.area1 {
+  width: 540px;
+  float: left;
+  position: relative; // margin-left: 32px;
+  // margin-top: 34px;
+}
+
+.layer0 {
+  width: 240px;
+  height: 200px;
+  border: 20px solid #50E3C2;
+  position: absolute;
+  right: 0;
+  top: -4px;
+  box-sizing: border-box;
+}
+
+.contentBox {
+  position: absolute;
+  top: 49px;
+}
+
+.pic {
+  background: url(https://images.unsplash.com/photo-1513827379601-9dba5099a3f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1acdd78f34ee75aade9e313251bb1695&auto=format&fit=crop&w=634&q=80)no-repeat;
+  background-position: right center;
+  background-size: cover;
+  width: 480px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.linen {
+  position: absolute;
+  font-family: Roboto-Black;
+  font-size: 28px;
+  color: #000000;
+  text-align: center;
+  line-height: 48px;
+  top: -16px;
+  text-shadow: -1px -16px rgba(0, 0, 0, 0.3), -1px -26px rgba(0, 0, 0, 0.1);
+}
+
+.mens1 {
+  left: 433px;
+  top: 350px;
+  transform: rotate(-270deg);
+}
+
+.numpic h1 {
+  position: absolute;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  text-align: center;
+  line-height: 48px;
+  bottom: -48px;
+}
+
+.numpic h1::after {
+  position: absolute;
+  content: "";
+  background: url(https://hexschool.github.io/THE_F2E_Design/week4-product%20gallery/assets/pattern%20unit.png); // background: linear-gradient( 135deg, #50e3c2 25%, transparent 0, transparent 50%, #50e3c2 0, #50e3c2 75%, transparent 0 );
+  // background-size: 60px 60px;
+  top: -56px;
+  width: 240px;
+  height: 100px;
+  margin-left: 8px;
+}
+
+.area2 {
+  width: 375px;
+  position: absolute; // float: right;
+  // margin-right: 32px;
+  margin-top: 34px;
+  right: 0;
+}
+
+.layer02 {
+  width: 240px;
+  height: 200px;
+  border: 20px solid #50E3C2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.layer02 h1 {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.boxGreen {
+  position: absolute;
+  width: 240px;
+  height: 200px;
+  background-color: $colorGreen;
+}
+
+.boxGreen1 {
+  top: 51px;
+  right: 60px;
+}
+
+.contentBox1 {
+  position: absolute;
+  top: 99px;
+  right: 132px;
+}
+
+.pic2 {
+  background: url(https://images.unsplash.com/photo-1514632542677-48fae74a01b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf412aceb1d689765e387d30fca7210a&auto=format&fit=crop&w=634&q=80)no-repeat;
+  background-position: right center;
+  background-size: cover;
+  width: 240px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.mens2 {
+  left: -18px;
+  top: -30px;
+}
+
+.mens {
+  position: absolute;
+  font-family: Roboto-BoldItalic;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.slogan {
+  position: absolute;
+  font-family: Roboto-Black;
+  font-size: 28px;
+  color: #000000;
+  text-align: center;
+  line-height: 48px;
+  text-shadow: -1px -16px rgba(0, 0, 0, 0.3), -1px -26px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.slogan2 {
+  bottom: -68px;
+  left: 100px;
+}
+
+.maintop {
+  margin-top: 80px;
+}
+
+.area3 {
+  position: relative;
+  width: 540px;
+  float: left; // border:3px sloid #000;
+}
+
+.layer03 {
+  width: 240px;
+  height: 200px;
+  border: 20px solid #50E3C2;
+  position: absolute;
+  right: 0;
+  top: 93px;
+  box-sizing: border-box;
+}
+
+.layer03 h1 {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.boxGreen3 {
+  top: 0px;
+  left: 0px;
+}
+
+.slogan3 {
+  top: -48px;
+  left: 84px;
+}
+
+.contentBox3 {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+.pic3 {
+  background: url(https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0f994eef47e5fb1a67849703cc961b3&auto=format&fit=crop&w=1350&q=80)no-repeat;
+  background-position: right center;
+  background-size: cover;
+  width: 480px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.mens3 {
+  left: 33px;
+  bottom: -28px;
+}
+
+.area4 {
+  width: 375px;
+  position: absolute;
+  margin-top: 34px;
+  right: 0;
+}
+
+.layer04 {
+  width: 240px;
+  height: 200px;
+  border: 20px solid #50E3C2;
+  position: absolute;
+  right: 60px;
+  top: -99px;
+  box-sizing: border-box;
+}
+
+.layer04 h1 {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.slogan4 {
+  top: 60px;
+  right: 180px;
+  transform: rotate(270deg);
+}
+
+.contentBox4 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.pic4 {
+  background: url(https://images.unsplash.com/photo-1484516758160-69878111a911?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=39466d66952b133d5a5cff642b970d05&auto=format&fit=crop&w=687&q=80)no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 240px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.mens4 {
+  right: -10px;
+  top: -90px;
+  transform: rotate(-270deg);
+}
+
+.numpic2 h1 {
+  position: absolute;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  text-align: center;
+  line-height: 48px;
+  bottom: 4px;
+  left: -60px;
+}
+
+.numpic2 h1::after {
+  position: absolute;
+  content: "";
+  background: url(https://hexschool.github.io/THE_F2E_Design/week4-product%20gallery/assets/pattern%20unit.png);
+  top: -10px;
+  width: 240px;
+  height: 100px;
+  margin-left: 5px;
+}
+
+.area5 {
+  position: relative;
+  width: 540px;
+  float: left;
+}
+
+.layer05 {
+  width: 240px;
+  height: 100px;
+  border: 20px solid #50E3C2;
+  position: absolute;
+  left: 130px;
+  top: 202px;
+  box-sizing: border-box;
+}
+
+.layer05 h1 {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.slogan5 {
+  top: 45px;
+  left: -240px;
+  letter-spacing: -5px;
+}
+
+.contentBox5 {
+  position: absolute;
+  top: 50px;
+  left: 239px;
+}
+
+.pic5 {
+  background: url(https://images.unsplash.com/photo-1525448198276-222de3961638?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=43fb25556cdbd191e520c7f28739e40d&auto=format&fit=crop&w=1350&q=80)no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 240px;
+  height: 200px;
+  overflow: hidden;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  /*IE*/
+  filter: FlipH;
+}
+
+.mens5 {
+  right: -128px;
+  top: 0px;
+}
+
+.numpic3::after {
+  position: absolute;
+  content: "";
+  background: url(https://hexschool.github.io/THE_F2E_Design/week4-product%20gallery/assets/pattern%20unit.png);
+  top: -60px;
+  left: -180px;
+  width: 240px;
+  height: 100px;
+}
+
+.maintop2 {
+  margin-top: -120px;
+}
+
+.area6 {
+  width: 375px;
+  position: absolute;
+  margin-top: 250px;
+  right: 0;
+}
+
+.layer06 {
+  width: 480px;
+  height: 200px;
+  border: 20px solid #50E3C2;
+  position: absolute;
+  right: 0px;
+  top: 260px;
+  box-sizing: border-box;
+}
+
+.layer06 h1 {
+  position: absolute;
+  top: -128px;
+  left: -80px;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.slogan6 {
+  top: -50px;
+  right: 0px;
+}
+
+.contentBox6 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.pic6 {
+  background: url(https://images.unsplash.com/photo-1519406709381-c1f293304b28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=98c497a29f229085d9574ee8b6eeef8c&auto=format&fit=crop&w=934&q=80)no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 480px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.mens6 {
+  right: 180px;
+  bottom: -30px;
+  // transform: rotate(-270deg);
+}
+
+.boxGreen6 {
+  top: 200px;
+  left: -180px;
+}
+
+// 第七
+.maintop7 {
+  margin-top: -40px;
+}
+
+.area7 {
+  position: relative;
+  width: 360px;
+  float: left;
+}
+
+.layer07 {
+  width: 240px;
+  height: 400px;
+  border: 20px solid #50E3C2;
+  position: absolute;
+  right: 60px;
+  top: -60px;
+  box-sizing: border-box;
+}
+
+.layer07 h1 {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  font-family: Roboto-Black;
+  font-size: 48px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.slogan7 {
+  top: 80px;
+  right: -136px;
+  transform: rotate(-270deg);
+}
+
+.contentBox7 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.pic7 {
+  background: url(https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63ff45d79414b3166b08b800a32018be&auto=format&fit=crop&w=634&q=80)no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 240px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.mens7 {
+  left: 0px;
+  top: -30px;
+  // transform: rotate(-270deg);
+}
+
+.boxGreen7 {
+  top: 200px;
+  left: 120px;
+}
